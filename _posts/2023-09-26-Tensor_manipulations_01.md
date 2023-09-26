@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Essential Tensor Manipulations (Part 1)"
+---
+
 # Essential Tensor Manipulations (Part 1)
 
 * Welcome to the first part of our series on tensor manipulations using Python and PyTorch! 🧠🔥 In this blog post, we'll explore the foundational aspects of tensor manipulation, providing you with a detailed and comprehensive understanding of each operation. Let's dive in and demystify the world of tensors.
