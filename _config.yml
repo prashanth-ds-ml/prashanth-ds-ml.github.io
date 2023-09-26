@@ -21,10 +21,12 @@
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+📊 Welcome to Katakam Prashanth's Data Science Learning Journey 🚀
+
+Let's learn together! I'm Katakam Prashanth, and this is our shared exploration of data science, machine learning, computer vision, and NLP. 
+We'll uncover the wonders of data, experiment with emerging technologies, and solve real-world puzzles side by side. 
+Whether you're a fellow learner, an HR professional scouting for talent, or a curious mind, join me on this thrilling educational adventure. 
+Welcome to my Data Science Learning Journey – where we grow our knowledge together.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
