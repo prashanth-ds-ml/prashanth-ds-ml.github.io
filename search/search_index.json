@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Hi, I'm Prashanth","text":"<p>This site is built with MkDocs (Material) and hosted on GitHub Pages.</p>"}]}
