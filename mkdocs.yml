@@ -5,7 +5,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - toc.integrate      # shows a headings TOC inside the page
+    - toc.integrate
     - header.autohide
 nav:
   - Home: index.md
