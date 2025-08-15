@@ -1,8 +1,22 @@
-site_name:Katakam Prashanth — Portfolio
+site_name: Katakam Prashanth — Portfolio
 site_url: https://prashanth-ds-ml.github.io/
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.integrate      # shows a headings TOC inside the page
+    - header.autohide
 nav:
   - Home: index.md
 plugins:
   - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
