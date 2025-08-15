@@ -1,25 +1,8 @@
 site_name: Katakam Prashanth — Portfolio
 site_url: https://prashanth-ds-ml.github.io/
-
-docs_dir: .   # ← tells MkDocs to treat the repo root as the docs folder
-
+docs_dir: .
 theme:
   name: material
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - toc.integrate
-    - header.autohide
 nav:
   - Home: index.md
-plugins:
-  - search
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
+plugins: [search]
