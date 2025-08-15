@@ -1,0 +1,17 @@
+- title: MSME RAG Chatbot
+  description: Profile → scheme matching with explainable eligibility. MongoDB + HF + Streamlit.
+  tags: [RAG, MongoDB, Streamlit]
+  demo: https://your-demo-link.example
+  code: https://github.com/your-org/msme-rag
+  post: /msme-rag-notes/
+
+- title: SmartCBC (on-device)
+  description: YOLOv8-nano → TFLite for RBC/WBC/platelet detection; real-time demo on Android.
+  tags: [Computer Vision, TFLite, YOLO]
+  code: https://github.com/your-org/smartcbc
+  post: /smartcbc-overview/
+
+- title: Stock P&L Dashboard
+  description: Streamlit app with goal-tracking, calendar heatmap, and rotation strategy.
+  tags: [Streamlit, Finance]
+  code: https://github.com/your-org/stock-pl

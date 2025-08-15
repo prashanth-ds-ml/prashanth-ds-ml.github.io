@@ -1,0 +1,10 @@
+title: Katakam Prashanth
+description: I build practical AI systems in RAG, CV, and data apps.
+url: https://prashanth-ds-ml.github.io
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+# Show short previews on the homepage; split body with <!--more-->
+excerpt_separator: "<!--more-->"
+# No theme -> fully custom single page

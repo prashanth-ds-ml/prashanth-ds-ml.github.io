@@ -1,8 +1,0 @@
-site_name: Katakam Prashanth — Portfolio
-site_url: https://prashanth-ds-ml.github.io/
-docs_dir: .
-theme:
-  name: material
-nav:
-  - Home: index.md
-plugins: [search]
