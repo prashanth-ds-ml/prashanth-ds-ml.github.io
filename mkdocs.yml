@@ -1,5 +1,8 @@
 site_name: Katakam Prashanth — Portfolio
 site_url: https://prashanth-ds-ml.github.io/
+
+docs_dir: .   # ← tells MkDocs to treat the repo root as the docs folder
+
 theme:
   name: material
   features:
