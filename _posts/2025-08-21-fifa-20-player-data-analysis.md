@@ -92,34 +92,11 @@ This project presents an in-depth **EDA** of the FIFA 20 player dataset. With 18
 | Aggression | Atlético Madrid, Roma, Inter |
 
 ---
-
-## Selected visuals
-
-Export figures from your notebook to your site repo so they render here. Save them under `assets/fifa/` and reference by path:
-
-```python
-# Example: before plt.show()
-plt.tight_layout()
-plt.savefig("assets/fifa/overall_hist.png", dpi=140, bbox_inches="tight")
-```
-
 Then reference in Markdown:
 
 ![Top 10 Clubs](/assets/fifa/top_10_clubs.png)
 
----
-
-## Reproduce locally
-
-```bash
-git clone https://github.com/prashanth-ds-ml/FIFA_Players_Analysis
-cd FIFA_Players_Analysis
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt  # or: pandas numpy matplotlib seaborn jupyter
-jupyter lab
-```
-
-Open the notebook/script, generate plots, and copy them into your **portfolio** repo under `assets/fifa/`.
+![Players ratings vs age](assets/fifa/ratings_vs_age.png)
 
 ---
 
