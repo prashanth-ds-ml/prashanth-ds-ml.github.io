@@ -19,6 +19,9 @@ layout: null
       <div class="brand"><a href="#top">{{ site.title }}</a></div>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#papers">Papers</a>
+      <a href="#certificates">Certificates</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -48,15 +51,103 @@ layout: null
         <div class="card">
           <h3 style="margin-top:0">{{ p.title }}</h3>
           <p>{{ p.description }}</p>
-          {% if p.tags %}
+
+          {%- comment -%} Merge tags from skills/tools if present {%- endcomment -%}
+          {% assign badges = "" | split: "" %}
+          {% if p.tags %}{% assign badges = badges | concat: p.tags %}{% endif %}
+          {% if p.skills %}{% assign badges = badges | concat: p.skills %}{% endif %}
+          {% if p.tools %}{% assign badges = badges | concat: p.tools %}{% endif %}
+          {% assign badges = badges | uniq %}
+
+          {% if badges and badges.size > 0 %}
           <div class="badges">
-            {% for t in p.tags %}<span class="badge">{{ t }}</span>{% endfor %}
+            {% for t in badges %}<span class="badge">{{ t }}</span>{% endfor %}
           </div>
           {% endif %}
+
           <p class="small">
             {% if p.demo %}<a href="{{ p.demo }}">Demo</a>{% endif %}
             {% if p.code %}{% if p.demo %} · {% endif %}<a href="{{ p.code }}">Code</a>{% endif %}
             {% if p.post %}{% if p.demo or p.code %} · {% endif %}<a href="{{ p.post }}">Write-up</a>{% endif %}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Auto-curated Skills & Tools from projects -->
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+
+      {% assign all_skills = "" | split: "" %}
+      {% assign all_tools  = "" | split: "" %}
+      {% for p in site.data.projects %}
+        {% if p.skills %}{% assign all_skills = all_skills | concat: p.skills %}{% endif %}
+        {% if p.tools %}{% assign all_tools  = all_tools  | concat: p.tools %}{% endif %}
+      {% endfor %}
+      {% assign all_skills = all_skills | uniq | sort %}
+      {% assign all_tools  = all_tools  | uniq | sort %}
+
+      {% if all_skills.size > 0 %}
+      <h3>Skills</h3>
+      <div class="chips">
+        {% for s in all_skills %}<span class="chip">{{ s }}</span>{% endfor %}
+      </div>
+      {% endif %}
+
+      {% if all_tools.size > 0 %}
+      <h3>Tools</h3>
+      <div class="chips">
+        {% for t in all_tools %}<span class="chip">{{ t }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </section>
+
+    <!-- Papers (pulled from _data/papers.yml) -->
+    <section id="papers">
+      <h2>Papers</h2>
+      <div class="grid">
+        {% for p in site.data.papers %}
+        <article class="card">
+          <h3 style="margin-top:0">{{ p.title }}</h3>
+          <p class="small paper-meta">
+            {% if p.authors %}{{ p.authors }} · {% endif %}
+            {% if p.venue %}{{ p.venue }}{% if p.year %} ({{ p.year }}){% endif %}{% endif %}
+          </p>
+          {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+          <p class="small">
+            {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+            {% if p.arxiv %}{% if p.pdf %} · {% endif %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
+            {% if p.zenodo %}{% if p.pdf or p.arxiv %} · {% endif %}<a href="{{ p.zenodo }}">Zenodo</a>{% endif %}
+            {% if p.doi %}{% if p.pdf or p.arxiv or p.zenodo %} · {% endif %}<a href="{{ p.doi }}">DOI</a>{% endif %}
+            {% if p.code %}{% if p.pdf or p.arxiv or p.zenodo or p.doi %} · {% endif %}<a href="{{ p.code }}">Code</a>{% endif %}
+            {% if p.poster %}{% if p.pdf or p.arxiv or p.zenodo or p.doi or p.code %} · {% endif %}<a href="{{ p.poster }}">Poster</a>{% endif %}
+            {% if p.slides %}{% if p.pdf or p.arxiv or p.zenodo or p.doi or p.code or p.poster %} · {% endif %}<a href="{{ p.slides }}">Slides</a>{% endif %}
+          </p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Certificates (Credly badges supported) -->
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="cert-grid">
+        {% for c in site.data.certificates %}
+        <div class="card cert-card">
+          {% if c.badge_image %}
+            {% if c.credly_url %}
+              <a href="{{ c.credly_url }}"><img class="cert-badge" src="{{ c.badge_image }}" alt="{{ c.name }} badge"></a>
+            {% else %}
+              <img class="cert-badge" src="{{ c.badge_image }}" alt="{{ c.name }} badge">
+            {% endif %}
+          {% endif %}
+          <h3 class="cert-title">{{ c.name }}</h3>
+          <p class="small muted">{{ c.provider }}{% if c.issued %} · Issued {{ c.issued }}{% endif %}</p>
+          {% if c.summary %}<p>{{ c.summary }}</p>{% endif %}
+          <p class="small">
+            {% if c.credential_url %}<a href="{{ c.credential_url }}">Credential</a>{% endif %}
+            {% if c.credly_url %}{% if c.credential_url %} · {% endif %}<a href="{{ c.credly_url }}">Credly</a>{% endif %}
           </p>
         </div>
         {% endfor %}

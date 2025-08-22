@@ -1,0 +1,13 @@
+- title: JNANA: A Short-Answer QA Dataset with Multi-Auditor Validation
+  authors: Katakam Prashanth, et al.
+  venue: Preprint
+  year: 2025
+  summary: Released a rigorously audited short-answer dataset with a 5-reviewer workflow and clear rubric; includes leaderboard and baselines.
+  pdf: https://example.com/jnana-paper.pdf
+  zenodo: https://zenodo.org/record/xxxxx
+  doi: https://doi.org/xx.xxxx/xxxxx
+  code: https://github.com/your-org/jnana
+  poster: https://example.com/jnana-poster.pdf
+  slides: https://example.com/jnana-slides.pdf
+
+# Add more papers as needed

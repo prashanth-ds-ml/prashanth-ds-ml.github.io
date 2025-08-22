@@ -1,17 +1,6 @@
-- title: FIFA Player analysis
-  description: Profile → scheme matching with explainable eligibility. MongoDB + HF + Streamlit.
-  tags: [RAG, MongoDB, Streamlit]
-  demo: https://your-demo-link.example
-  code: https://github.com/your-org/msme-rag
-  post: /msme-rag-notes/
-
-- title: Leaf Disease prediction
-  description: YOLOv8-nano → TFLite for RBC/WBC/platelet detection; real-time demo on Android.
-  tags: [Computer Vision, TFLite, YOLO]
-  code: https://github.com/your-org/smartcbc
-  post: /smartcbc-overview/
-
-- title: Sales performance dashboard with SQL & streamlit
-  description: Streamlit app with goal-tracking, calendar heatmap, and rotation strategy.
-  tags: [Streamlit, Finance]
-  code: https://github.com/your-org/stock-pl
+- title: FIFA 20 Player Analysis
+  description: EDA across ~18k players—ratings, wages, clubs, countries, role patterns; clean viz & insights.
+  code: https://github.com/prashanth-ds-ml/FIFA_Players_Analysis
+  post: /fifa-20-player-analysis/
+  skills: [EDA, Data Cleaning, Aggregation, Visualization]
+  tools: [Pandas, NumPy, Matplotlib, Seaborn]
