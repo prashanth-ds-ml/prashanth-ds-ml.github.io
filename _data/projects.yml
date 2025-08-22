@@ -1,6 +1,14 @@
-- title: FIFA 20 Player Analysis
-  description: EDA across ~18k players—ratings, wages, clubs, countries, role patterns; clean viz & insights.
-  code: https://github.com/prashanth-ds-ml/FIFA_Players_Analysis
-  post: /fifa-20-player-analysis/
-  skills: [EDA, Data Cleaning, Aggregation, Visualization]
-  tools: [Pandas, NumPy, Matplotlib, Seaborn]
+- title: "FIFA 20 Player Analysis"
+  description: "EDA across ~18k players—ratings, wages, clubs, countries, role patterns; clean viz & insights."
+  code: "https://github.com/prashanth-ds-ml/FIFA_Players_Analysis"
+  post: "/fifa-20-player-analysis/"
+  skills: ["EDA", "Data Cleaning", "Aggregation", "Visualization"]
+  tools: ["Pandas", "NumPy", "Matplotlib", "Seaborn"]
+
+# Example additional project (edit or remove)
+- title: "MSME RAG Chatbot"
+  description: "Profile → scheme matching with explainable eligibility using MongoDB + HF + Streamlit."
+  code: "https://github.com/your-org/msme-rag"
+  post: "/msme-rag-notes/"
+  skills: ["RAG", "Prompting", "Evaluation"]
+  tools: ["Python", "Hugging Face", "MongoDB", "Streamlit"]

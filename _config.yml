@@ -1,10 +1,12 @@
-title: Katakam Prashanth
-description: I build practical AI systems in RAG, CV, and data apps.
-url: https://prashanth-ds-ml.github.io
+title: "Katakam Prashanth"
+description: "I build practical AI systems in RAG, CV, and data apps."
+theme: jekyll-theme-primer
+
+# clean URLs like /my-post/
 permalink: /:title/
-markdown: kramdown
-kramdown:
-  input: GFM
-# Show short previews on the homepage; split body with <!--more-->
+
+# allow manual excerpt breaks in posts with <!--more-->
 excerpt_separator: "<!--more-->"
-# No theme -> fully custom single page
+
+# (Optional) if you host under a project site, set baseurl; for user site, leave empty
+# baseurl: ""

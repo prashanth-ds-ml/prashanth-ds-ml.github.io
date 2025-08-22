@@ -1,5 +1,4 @@
 ---
-# front matter enables Jekyll processing
 title: Home
 layout: null
 ---
@@ -43,7 +42,7 @@ layout: null
       </p>
     </section>
 
-    <!-- Projects (pulled from _data/projects.yml) -->
+    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="grid">
@@ -52,7 +51,6 @@ layout: null
           <h3 style="margin-top:0">{{ p.title }}</h3>
           <p>{{ p.description }}</p>
 
-          {%- comment -%} Merge tags from skills/tools if present {%- endcomment -%}
           {% assign badges = "" | split: "" %}
           {% if p.tags %}{% assign badges = badges | concat: p.tags %}{% endif %}
           {% if p.skills %}{% assign badges = badges | concat: p.skills %}{% endif %}
@@ -75,10 +73,9 @@ layout: null
       </div>
     </section>
 
-    <!-- Auto-curated Skills & Tools from projects -->
+    <!-- Skills & Tools (auto-curated) -->
     <section id="skills">
       <h2>Skills & Tools</h2>
-
       {% assign all_skills = "" | split: "" %}
       {% assign all_tools  = "" | split: "" %}
       {% for p in site.data.projects %}
@@ -103,7 +100,7 @@ layout: null
       {% endif %}
     </section>
 
-    <!-- Papers (pulled from _data/papers.yml) -->
+    <!-- Papers -->
     <section id="papers">
       <h2>Papers</h2>
       <div class="grid">
@@ -129,7 +126,7 @@ layout: null
       </div>
     </section>
 
-    <!-- Certificates (Credly badges supported) -->
+    <!-- Certificates -->
     <section id="certificates">
       <h2>Certificates</h2>
       <div class="cert-grid">
@@ -154,7 +151,7 @@ layout: null
       </div>
     </section>
 
-    <!-- Blog (latest posts; excerpts only) -->
+    <!-- Blog (excerpts only) -->
     <section id="blog">
       <h2>Blog</h2>
       {% for post in site.posts limit:8 %}
@@ -173,7 +170,9 @@ layout: null
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Open to roles in ML/AI, RAG systems, and practical CV. For collaborations or consulting, email me at <a href="mailto:you@email.com">you@email.com</a>.</p>
+      <p>Open to roles in ML/AI, RAG systems, and practical CV. For collaborations or consulting, email me at
+        <a href="mailto:you@email.com">you@email.com</a>.
+      </p>
     </section>
   </main>
 
