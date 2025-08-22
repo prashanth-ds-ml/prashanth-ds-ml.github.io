@@ -48,9 +48,11 @@ layout: null
         <div class="card">
           <h3 style="margin-top:0">{{ p.title }}</h3>
           <p>{{ p.description }}</p>
-          {% if p.tags %}<div class="badges">
+          {% if p.tags %}
+          <div class="badges">
             {% for t in p.tags %}<span class="badge">{{ t }}</span>{% endfor %}
-          </div>{% endif %}
+          </div>
+          {% endif %}
           <p class="small">
             {% if p.demo %}<a href="{{ p.demo }}">Demo</a>{% endif %}
             {% if p.code %}{% if p.demo %} · {% endif %}<a href="{{ p.code }}">Code</a>{% endif %}
@@ -61,19 +63,19 @@ layout: null
       </div>
     </section>
 
-    <!-- Blog (latest posts; edit _posts/*.md in Markdown) -->
+    <!-- Blog (latest posts; excerpts only) -->
     <section id="blog">
       <h2>Blog</h2>
       {% for post in site.posts limit:8 %}
       <article class="card">
         <h3 style="margin-top:0"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <div class="small">{{ post.date | date: "%b %d, %Y" }}</div>
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
         <p class="small"><a href="{{ post.url | relative_url }}">Read more →</a></p>
       </article>
       {% endfor %}
       <p class="small">
-        <a href="{{ '/archive' | relative_url }}">View all posts</a>
+        <a href="{{ '/archive/' | relative_url }}">View all posts</a>
       </p>
     </section>
 
