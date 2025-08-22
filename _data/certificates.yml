@@ -1,17 +1,5 @@
-- name: "MongoDB Associate Developer (Python)"
-  provider: "MongoDB"
-  issued: "2025-06"
-  badge_image: "https://images.credly.com/size/340x340/images/your-mdb-badge.png"
-  credly_url: "https://www.credly.com/badges/your-mdb-badge-id"
-  credential_url: "https://university.mongodb.com/certification/verify/your-id"
-  summary: |
-    Focus on schema design, aggregation, indexing, and Python driver basics.
-
 - name: "Microsoft Certified: Azure AI Fundamentals"
-  provider: "Microsoft"
+  provider: "Microsoft / Credly"
   issued: "2025-05"
-  badge_image: "https://images.credly.com/size/340x340/images/your-azureai-badge.png"
-  credly_url: "https://www.credly.com/badges/your-azureai-badge-id"
-  credential_url: "https://learn.microsoft.com/your-verify-link"
-  summary: |
-    Covered responsible AI, ML concepts, and Azure AI services; hands-on with core Azure ML tooling.
+  url: "https://www.credly.com/badges/cd729727-d5c6-48a4-9933-e20cbebc279c/public_url"
+  summary: "Covers responsible AI, ML concepts, and Azure AI services."

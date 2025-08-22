@@ -132,20 +132,22 @@ layout: null
       <div class="cert-grid">
         {% for c in site.data.certificates %}
         <div class="card cert-card">
-          {% if c.badge_image %}
-            {% if c.credly_url %}
-              <a href="{{ c.credly_url }}"><img class="cert-badge" src="{{ c.badge_image }}" alt="{{ c.name }} badge"></a>
-            {% else %}
-              <img class="cert-badge" src="{{ c.badge_image }}" alt="{{ c.name }} badge">
-            {% endif %}
-          {% endif %}
           <h3 class="cert-title">{{ c.name }}</h3>
-          <p class="small muted">{{ c.provider }}{% if c.issued %} · Issued {{ c.issued }}{% endif %}</p>
-          {% if c.summary %}<p>{{ c.summary }}</p>{% endif %}
-          <p class="small">
-            {% if c.credential_url %}<a href="{{ c.credential_url }}">Credential</a>{% endif %}
-            {% if c.credly_url %}{% if c.credential_url %} · {% endif %}<a href="{{ c.credly_url }}">Credly</a>{% endif %}
+          <p class="small muted">
+            {% if c.provider %}{{ c.provider }}{% endif %}
+            {% if c.issued %} · Issued {{ c.issued }}{% endif %}
           </p>
+          {% if c.summary %}<p>{{ c.summary }}</p>{% endif %}
+
+          {% if c.links %}
+            <p class="small">
+              {% for l in c.links %}
+                <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label | default: 'Link' }}</a>{% unless forloop.last %} · {% endunless %}
+              {% endfor %}
+            </p>
+          {% elsif c.url %}
+            <p class="small"><a href="{{ c.url }}" target="_blank" rel="noopener">Link</a></p>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
