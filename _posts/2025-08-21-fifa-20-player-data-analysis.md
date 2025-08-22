@@ -41,7 +41,6 @@ I wanted a small, clean project to practice data exploration and storytelling:
 ---
 
 ## A few representative visuals
-Then reference in Markdown:
 
 ![Overall Rating Distribution](/assets/fifa/players_vs_overall_ratings.png)
 *Most players sit in the 65–75 overall band.*
