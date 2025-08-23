@@ -1,5 +1,5 @@
 ---
-title: "MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()` (lite, clear, and to the point)"
+title: "MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()`"
 ---
 
 # MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()` (lite, clear, and to the point)
