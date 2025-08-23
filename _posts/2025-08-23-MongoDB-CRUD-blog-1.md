@@ -2,7 +2,7 @@
 title: "MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()`"
 ---
 
-# MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()` (lite, clear, and to the point)
+# MongoDB CRUD — Lesson 1: `insertOne()` & `insertMany()`
 
 You’re kicking off CRUD with **Create**. In this lesson, MongoDB University shows how to add data in **mongosh** using two methods: one for a single document and one for a batch.
 
