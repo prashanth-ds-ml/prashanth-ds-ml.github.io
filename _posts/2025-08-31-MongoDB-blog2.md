@@ -1,4 +1,3 @@
-````markdown
 # 📖 Learning MongoDB: Connecting with Mongosh & Creating Your First DB, Collection, and Document
 
 Hey readers 👋, this blog is part of my learning journey while preparing for the **MongoDB Associate Python Developer Exam**.  
