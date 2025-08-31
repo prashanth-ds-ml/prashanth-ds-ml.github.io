@@ -1,6 +1,6 @@
-# 📖 Learning MongoDB: Connecting with Mongosh & Creating Your First DB, Collection, and Document
+# MongoDB: Connecting with Mongosh & Creating Your First DB, Collection, and Document
 
-Hey readers 👋, this blog is part of my learning journey while preparing for the **MongoDB Associate Python Developer Exam**.  
+Hey readers, this blog is part of my learning journey while preparing for the **MongoDB Associate Python Developer Exam**.  
 Today, let’s start simple — connecting to MongoDB with **mongosh**, exploring databases, and creating our first **DB → collection → document**.
 
 ---
