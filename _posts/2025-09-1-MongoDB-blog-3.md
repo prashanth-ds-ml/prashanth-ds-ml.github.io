@@ -21,7 +21,7 @@ But writing multi-line queries in the terminal can be tricky. This time, let’s
    - **Mac** → drag the `.dmg` file to Applications.
    - **Windows** → run the installer `.msi`.
    - **Linux** → follow `.deb` or `.rpm` package steps.
-
+   
 ---
 
 ##  Step 2: Connect Compass to Your Atlas Cluster
