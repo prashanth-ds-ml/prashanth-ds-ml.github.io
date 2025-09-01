@@ -28,11 +28,9 @@ But writing multi-line queries in the terminal can be tricky. This time, let’s
 
 1. Open Compass.  
 2. Copy your connection string from Atlas:  
-```
 
 mongodb+srv://<username>@<cluster>.mongodb.net/
 
-````
 (same as we used in mongosh).  
 3. Paste it into Compass “New Connection” screen.  
 4. Enter your username + password → click **Connect**.  
