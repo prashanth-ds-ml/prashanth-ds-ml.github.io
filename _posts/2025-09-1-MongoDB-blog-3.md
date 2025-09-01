@@ -27,7 +27,7 @@ But writing multi-line queries in the terminal can be tricky. This time, let’s
 ## 🔑 Step 2: Connect Compass to Your Atlas Cluster
 
 1. Open Compass.  
-2. Copy your connection string from Atlas: "mongodb+srv://<username>@<cluster>.mongodb.net/"
+2. Copy your connection string from Atlas: "mongodb+srv://username:<db_password>@cluster0.xq0bvx8.mongodb.net/"
 (same as we used in mongosh).  
 3. Paste it into Compass “New Connection” screen.  
 4. Enter your username + password → click **Connect**.  
