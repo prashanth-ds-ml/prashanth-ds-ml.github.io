@@ -12,7 +12,7 @@ But writing multi-line queries in the terminal can be tricky. This time, let’s
 
 ---
 
-## 🔽 Step 1: Download MongoDB Compass
+##  Step 1: Download MongoDB Compass
 
 1. Go to [MongoDB Compass Download Page](https://www.mongodb.com/try/download/compass).
 2. Choose your OS (macOS / Windows / Linux).
@@ -24,7 +24,7 @@ But writing multi-line queries in the terminal can be tricky. This time, let’s
 
 ---
 
-## 🔑 Step 2: Connect Compass to Your Atlas Cluster
+##  Step 2: Connect Compass to Your Atlas Cluster
 
 1. Open Compass.  
 2. Copy your connection string from Atlas: "mongodb+srv://username:db_password@cluster0.xq0bvx8.mongodb.net/"
@@ -36,7 +36,7 @@ Now you should see your cluster, databases, and collections in a nice GUI.
 
 ---
 
-## 🖥️ Step 3: Use the Built-in Mongosh Shell
+##  Step 3: Use the Built-in Mongosh Shell
 
 Compass comes with an **integrated shell** at the bottom panel:
 - You can run the exact same queries (`show dbs`, `use mydb`, `db.collection.find()`) here.  
@@ -45,21 +45,21 @@ Compass comes with an **integrated shell** at the bottom panel:
 
 ---
 
-## 🧩 Step 4: Key MongoDB Terminologies
+##  Step 4: Key MongoDB Terminologies
 
 Before we dive deeper, let’s understand the basic terms you **must** know for both practice and the exam:
 
-### 📦 Database
+###  Database
 - Logical container for data.
 - Holds one or more **collections**.
 - Example: `blog_demo`, `sample_mflix`.
 
-### 📂 Collection
+###  Collection
 - Equivalent to a table in relational databases, but schema-flexible.
 - Holds **documents**.
 - Example: `students`, `movies`.
 
-### 📄 Document
+###  Document
 - Basic unit of data (similar to a row in SQL).
 - JSON-like object (internally BSON).
 - Example:
@@ -71,27 +71,27 @@ Before we dive deeper, let’s understand the basic terms you **must** know for 
 }
 ````
 
-### 🔑 Field
+### Field
 
 * A key–value pair inside a document.
 * Example: `"year": 1`.
 
-### 🆔 `_id`
+### `_id`
 
 * Auto-generated unique identifier for each document.
 * Acts as the **primary key**.
 
-### 🧾 BSON
+### BSON
 
 * Binary JSON format used internally by MongoDB.
 * Allows rich types: ObjectId, Date, embedded docs, arrays.
 
-### 📑 Schema
+### Schema
 
 * MongoDB is schema-flexible (documents in the same collection don’t need identical fields).
 * Optional **JSON Schema Validation** can enforce rules.
 
-### 🔍 CRUD
+### CRUD
 
 * Core operations:
 
@@ -100,7 +100,7 @@ Before we dive deeper, let’s understand the basic terms you **must** know for 
   * **U**pdate → `updateOne`, `updateMany`
   * **D**elete → `deleteOne`, `deleteMany`
 
-### 📊 Aggregation
+### Aggregation
 
 * Framework to process data in stages (`$match`, `$group`, `$sort`).
 * Powerful for analytics queries.
