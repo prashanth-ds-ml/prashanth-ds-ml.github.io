@@ -4,7 +4,7 @@ title: MongoDB CRUD — Properly and Improperly Formed Insert Commands
 ---
 ***
 
-# MongoDB CRUD — Lesson 2.1: Properly and Improperly Formed Insert Commands
+# MongoDB CRUD — Properly and Improperly Formed Insert Commands
 
 Hey readers! Welcome back to my MongoDB learning series, a part of my preparation for the **MongoDB Associate Python Developer Exam**.
 
