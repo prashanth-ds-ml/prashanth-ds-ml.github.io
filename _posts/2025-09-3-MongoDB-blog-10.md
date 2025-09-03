@@ -4,7 +4,7 @@ title: MongoDB CRUD — Updating Multiple Documents
 
 ***
 
-# MongoDB CRUD —en Updating Multiple Documents
+# MongoDB CRUD —  Updating Multiple Documents
 
 Welcome back to the MongoDB learning series! In this post, we dive into **updating multiple documents simultaneously**, a common requirement in real-world applications and an important topic for the MongoDB Associate Developer Exam.
 
