@@ -21,6 +21,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   use sample_mflix
   ```
+
 ![show dbs command](/assets/mongodb_blogs/1.show_dbs.png)
 ![use db](/assets/mongodb_blogs/2.use.png)
 
@@ -45,13 +46,12 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   db.movies.find({ year: { $gt: 2000 } }, { title: 1, year: 1 }).limit(3)
   ```
-- **Insert screenshot:**  
-  Use  (Set 2) showing this query and its results.[3]
 
 - View a full document to understand schema and nested structure:
   ```js
   db.movies.findOne()
   ```
+  
 ![find one](/assets/mongodb_blogs/4.findOne.png)
 ![find one-1](/assets/mongodb_blogs/4.1.findOne.png)
 
@@ -65,6 +65,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```
   Returns no results because `year` is stored as a number, not string.
 - Use proper types in filters always.
+
 ![find](/assets/mongodb_blogs/5.find.png)
 
 ***
@@ -92,6 +93,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
     { $set: { "tomatoes.viewer.rating": 4.8, runtime: 158 } }
   )
   ```
+
 ![update one](/assets/mongodb_blogs/6.updateOne.png)
 
 ***
@@ -119,6 +121,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
     { $set: { boxofficeUSD: 829895144, plot: "A skilled thief leads a specialized team..." } }
   )
   ```
+
 ![update one-1](/assets/mongodb_blogs/6.1.updateOne.png)
 ![update one adToSet](/assets/mongodb_blogs/6.2.updateOne_addToSet.png)
 
