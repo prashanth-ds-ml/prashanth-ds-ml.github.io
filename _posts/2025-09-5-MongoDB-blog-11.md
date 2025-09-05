@@ -21,8 +21,8 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   use sample_mflix
   ```
-- **Insert screenshots here:**  
 ![show dbs command](/assets/mongodb_blogs/1.show_dbs.png)
+![use db](/assets/mongodb_blogs/2.use.png)
 
 ***
 
@@ -33,8 +33,9 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   show collections
   ```
 - Observe collections like `movies`, `comments`, `theaters`, etc.
-- **Insert screenshots:**  
-  Add  and  from Set 2 showing collections listing commands and output.[2][1]
+
+![show collections](/assets/mongodb_blogs/3.show_collections.png)
+![collections](/assets/mongodb_blogs/3.1.output.png)
 
 ***
 
@@ -51,8 +52,8 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   db.movies.findOne()
   ```
-- **Insert screenshot:**  
-  Use  (Set 2) showing a full movie document.[4]
+![find one](/assets/mongodb_blogs/4.findOne.png)
+![find one-1](/assets/mongodb_blogs/4.1.findOne.png)
 
 ***
 
@@ -64,9 +65,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```
   Returns no results because `year` is stored as a number, not string.
 - Use proper types in filters always.
-
-- **Insert screenshot:**  
-  Add  (Set 3) showing empty result for wrong type filter.[3]
+![find](/assets/mongodb_blogs/5.find.png)
 
 ***
 
@@ -84,8 +83,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   db.movies.findOne({ title: "Inception" }, { "imdb.rating": 1, featured: 1, _id: 0 })
   ```
-- **Insert screenshots:**  
-  Use  and  (Set 3) showing the updateOne command and results for success and projection.[1][2]
+
 
 - Update multiple fields including nested ones:
   ```js
@@ -94,8 +92,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
     { $set: { "tomatoes.viewer.rating": 4.8, runtime: 158 } }
   )
   ```
-- **Insert screenshot:**  
-  Add  (Set 3) showing multi-field update and acknowledgement output.[3]
+![update one](/assets/mongodb_blogs/6.updateOne.png)
 
 ***
 
@@ -122,8 +119,8 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
     { $set: { boxofficeUSD: 829895144, plot: "A skilled thief leads a specialized team..." } }
   )
   ```
-- **Insert screenshots:**  
-  Use , , and  from Set 4 and Set 5 displaying these update operations and their respective outputs.[2][1][3]
+![update one-1](/assets/mongodb_blogs/6.1.updateOne.png)
+![update one adToSet](/assets/mongodb_blogs/6.2.updateOne_addToSet.png)
 
 ***
 
@@ -136,9 +133,6 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   - `upsertedCount`: new documents inserted via upsert.
 - Running the same update twice may yield a `modifiedCount` of 0 the second time (idempotency).
 - Always verify with targeted `findOne` and projections after updates.
-
-- **Insert screenshots:**  
-  Use  from Set 4 and  from Set 5 showing update results with `modifiedCount`.[4][1]
 
 ***
 
