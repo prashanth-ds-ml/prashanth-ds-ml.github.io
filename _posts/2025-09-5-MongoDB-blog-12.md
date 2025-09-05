@@ -1,6 +1,6 @@
-***
+---
 title: MongoDB CRUD — Mastering Document Deletion for Reliable Data Management
-***
+---
 
 # MongoDB CRUD — Mastering Document Deletion for Reliable Data Management
 
