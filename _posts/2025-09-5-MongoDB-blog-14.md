@@ -91,7 +91,7 @@ for movie in cursor:
 
 ## 5. Practice MCQs
 
-1. What does `$in` operator in query do?
+**Q1:** What does `$in` operator in query do?
 
 a) Matches documents where field contains *all* values in array  
 
@@ -103,7 +103,7 @@ d) Matches documents with arrays larger than specified array
 
 ***
 
-2. How does `$elemMatch` differ from `$in` when querying arrays?
+**Q2:** How does `$elemMatch` differ from `$in` when querying arrays?
 
 a) `$elemMatch` matches multiple conditions in a *single* element  
 
@@ -115,7 +115,7 @@ d) `$elemMatch` only works with numeric arrays
 
 ***
 
-3. Given the query:
+**Q3:** Given the query:
 
 ```js
 db.movies.find({ genres: { $elemMatch: { $eq: "Action" } } })
