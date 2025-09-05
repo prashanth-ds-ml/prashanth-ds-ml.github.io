@@ -22,7 +22,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   use sample_mflix
   ```
 - **Insert screenshots here:**  
-![show dbs command](assets/mongodb_blogs/1.show_dbs.png)
+![show dbs command](/assets/mongodb_blogs/1.show_dbs.png)
 
 ***
 
