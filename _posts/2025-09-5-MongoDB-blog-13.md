@@ -137,11 +137,15 @@ b) `{ year: 2010 }`
 c) `{ year: { $eq: "2010" } }`  
 d) `{ year: { $neq: 2010 } }`
 
+***
+
 **Q2:** What does the query `{ year: { $gte: 2000, $lt: 2010 } }` return?  
 a) Movies released before 2000 or after 2010  
 b) Movies released from 2000 inclusive to 2010 exclusive  
 c) Movies released exactly in 2000 and 2010  
 d) Movies released only before 2010
+
+***
 
 **Q3:** Which statement about MongoDB queries is true?  
 a) Queries ignore data type differences  
