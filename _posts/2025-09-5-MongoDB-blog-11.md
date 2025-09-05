@@ -51,7 +51,7 @@ title: Hands-On MongoDB Guide From Connection to Updates Using Sample Data
   ```js
   db.movies.findOne()
   ```
-  
+
 ![find one](/assets/mongodb_blogs/4.findOne.png)
 ![find one-1](/assets/mongodb_blogs/4.1.findOne.png)
 
@@ -173,25 +173,35 @@ a) `$set`
 b) `$replace`  
 c) `$push`
 
+***
+
 **Q2:** How do you add an element to an array only if it's not already present?  
 a) `$push`  
 b) `$addToSet`  
 c) `$pull`
+
+***
 
 **Q3:** What does `acknowledged` signify in an update response?  
 a) Update failed  
 b) Update command was received  
 c) Document inserted
 
+***
+
 **Q4:** What would `modifiedCount: 0` typically mean after an update command?  
 a) No document matched the filter  
 b) Document matched but no data changed  
 c) An error occurred during update
 
+***
+
 **Q5:** If a query uses `{ year: "2000" }`, but `year` is stored as a number, what will happen?  
 a) Results matching year 2000 are returned  
 b) Query returns no documents  
 c) Query raises an error
+
+***
 
 **Q6:** Which of the following queries will correctly find all movies released after the year 2000?
 
@@ -270,7 +280,6 @@ d) The command will fail the second time.
 
 ***
 
-
 **Q12:** What is the effect of the following query projection?
 
 ```js
@@ -292,7 +301,6 @@ c) `{ title: 1, runtime: true }`
 d) `{ title: 0, runtime: 0 }`
 
 ***
-
 
 **Q14:** Which command will insert a new document if no document matches the filter criteria?
 
