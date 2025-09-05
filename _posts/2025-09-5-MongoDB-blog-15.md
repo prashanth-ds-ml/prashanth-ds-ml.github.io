@@ -31,35 +31,13 @@ These operators enable flexible, precise filtering beyond simple conditions.
 | **`$not`**  | `{ field: { $not: { <condition> } } }`                | Negates condition on a field; matches docs where condition is false |
 | **`$nor`**  | `{ $nor: [ {cond1}, {cond2}, ... ] }`                  | Joins conditions by NOR; docs satisfy *none* of the conditions   |
 
-- **`$and`** example:
-
-```js
-{ $and: [ { year: { $gt: 2010 } }, { "imdb.rating": { $gt: 8 } } ] }
-```
-
-- **`$or`** example:
-
-```js
-{ $or: [ { year: { $gt: 2010 } }, { genres: "Sci-Fi" } ] }
-```
-
-- **`$not`** example:
-
-```js
-{ rated: { $not: { $lt: "PG-13" } } }
-```
-
-- **`$nor`** example:
-
-```js
-{ $nor: [ { genres: "Comedy" }, { genres: "Drama" } ] }
-```
-
 ***
 
 ## 3. Real-Life Examples
 
-### Find movies released after 2010 *and* rated above 8:
+### Example 1: Find movies released after 2010 *and* rated above 8
+
+**Mongo Shell:**
 
 ```js
 db.movies.find({
@@ -70,7 +48,30 @@ db.movies.find({
 })
 ```
 
-### Find movies released after 2010 *or* belonging to Sci-Fi genre:
+**PyMongo:**
+
+```python
+from pymongo import MongoClient
+
+client = MongoClient('mongodb://localhost:27017/')
+db = client.sample_mflix
+
+cursor = db.movies.find({
+    "$and": [
+        {"year": {"$gt": 2010}},
+        {"imdb.rating": {"$gt": 8}}
+    ]
+})
+
+for movie in cursor:
+    print(movie["title"], movie["year"], movie["imdb"]["rating"])
+```
+
+***
+
+### Example 2: Find movies released after 2010 *or* belonging to Sci-Fi genre
+
+**Mongo Shell:**
 
 ```js
 db.movies.find({
@@ -81,13 +82,46 @@ db.movies.find({
 })
 ```
 
-### Find movies **not** rated below PG-13:
+**PyMongo:**
+
+```python
+cursor = db.movies.find({
+    "$or": [
+        {"year": {"$gt": 2010}},
+        {"genres": "Sci-Fi"}
+    ]
+})
+
+for movie in cursor:
+    print(movie["title"], movie.get("genres"))
+```
+
+***
+
+### Example 3: Find movies NOT rated below PG-13
+
+**Mongo Shell:**
 
 ```js
 db.movies.find({ rated: { $not: { $lt: "PG-13" } } })
 ```
 
-### Find movies that are **neither** comedies **nor** dramas:
+**PyMongo:**
+
+```python
+cursor = db.movies.find({
+    "rated": {"$not": {"$lt": "PG-13"}}
+})
+
+for movie in cursor:
+    print(movie["title"], movie.get("rated"))
+```
+
+***
+
+### Example 4: Find movies neither comedies nor dramas
+
+**Mongo Shell:**
 
 ```js
 db.movies.find({
@@ -98,16 +132,30 @@ db.movies.find({
 })
 ```
 
+**PyMongo:**
+
+```python
+cursor = db.movies.find({
+    "$nor": [
+        {"genres": "Comedy"},
+        {"genres": "Drama"}
+    ]
+})
+
+for movie in cursor:
+    print(movie["title"], movie.get("genres"))
+```
+
 ***
 
 ## 4. Key Points for Exam & Interviews
 
 - MongoDB applies implicit AND between fields; explicit `$and` is used mostly for complex or nested conditions.
 - `$or` and `$nor` arrays require conditions to define alternatives or exclusions.
-- `$not` negates conditions at the field level and cannot replace `$nor` or `$and`.
-- Logical operators can be nested and combined to build intricate queries.
-- Understanding operator precedence ensures query accuracy.
-- Logical operators are often tested through query output or syntax identification questions.
+- `$not` negates conditions on a single field and cannot replace `$nor` or `$and`.
+- Logical operators support nesting and combination to build complex queries.
+- Understanding operator precedence and logic improves query accuracy.
+- Logical operators often appear as query construction or output recognition questions on exams.
 
 ***
 
@@ -150,3 +198,5 @@ d) To match documents where field exists
 - [MongoDB $nor Operator](https://www.mongodb.com/docs/manual/reference/operator/query/nor/)  
 
 ***
+
+Let me know if you want to proceed with the next blog or anything else!
