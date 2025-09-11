@@ -107,8 +107,8 @@ c) MongoDB performs a collection scan
 
 ## References
 
- [MongoDB Official Docs — Compound Indexes](https://www.mongodb.com/docs/manual/core/index-compound/)[1]
- [MongoDB Official Docs — Explain Results](https://www.mongodb.com/docs/manual/reference/explain-results/)[2]
- [MongoDB Official Docs — Indexes](https://www.mongodb.com/docs/manual/indexes/)[3]
+- [MongoDB Official Docs — Compound Indexes](https://www.mongodb.com/docs/manual/core/index-compound/)[1]
+- [MongoDB Official Docs — Explain Results](https://www.mongodb.com/docs/manual/reference/explain-results/)[2]
+- [MongoDB Official Docs — Indexes](https://www.mongodb.com/docs/manual/indexes/)[3]
 
 ***
