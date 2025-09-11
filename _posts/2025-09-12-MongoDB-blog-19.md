@@ -1,5 +1,7 @@
 ---
+
 title: MongoDB findAndModify with Concurrent Operations — Behavior and Atomicity
+
 ---
 
 # Understanding MongoDB findAndModify with Concurrent Operations
