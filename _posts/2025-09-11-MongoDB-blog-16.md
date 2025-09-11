@@ -3,7 +3,7 @@
 title: MongoDB Aggregation Framework — Foundations and Practical Usage
 ---
 
-# Introduction / Explanation
+# Introduction
 
 The **MongoDB Aggregation Framework** enables data analytics and transformation by processing documents through stages such as filtering, grouping, sorting, and projecting. This feature is critical for applications requiring summarization, reporting, or real-time insights, making it a core exam and interview topic for associate developers.[1][2][3][4]
 

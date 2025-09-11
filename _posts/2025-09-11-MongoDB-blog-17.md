@@ -123,7 +123,7 @@ c) Improved write speed
 
 # References
 
- [MongoDB Official Docs: Indexes](https://www.mongodb.com/docs/manual/indexes/)[1]
- [MongoDB Official Docs: Explain Results](https://www.mongodb.com/docs/manual/reference/explain-results/)[2]
- [MongoDB Official Docs: Compound Indexes](https://www.mongodb.com/docs/manual/core/index-compound/)[3]
+- [MongoDB Official Docs: Indexes](https://www.mongodb.com/docs/manual/indexes/)[1]
+- [MongoDB Official Docs: Explain Results](https://www.mongodb.com/docs/manual/reference/explain-results/)[2]
+- [MongoDB Official Docs: Compound Indexes](https://www.mongodb.com/docs/manual/core/index-compound/)[3]
 
