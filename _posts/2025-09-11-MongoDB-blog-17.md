@@ -1,10 +1,9 @@
 ---
-
-Title : MongoDB Indexes and Explain Plan — Boosting Query Performance
+title : MongoDB Indexes and Explain Plan — Boosting Query Performance
 
 ---
 
-# Introduction / Explanation
+# Introduction
 
 Indexes are special data structures in MongoDB that improve the speed of query execution by allowing efficient location of data without scanning the entire collection. Understanding how to create, manage, and analyze indexes is crucial for optimizing database performance and forms a key portion of the MongoDB Associate Developer exam. The explain plan feature helps developers inspect query execution and understand whether indexes are used effectively or if collection scans are occurring.[1]
 
