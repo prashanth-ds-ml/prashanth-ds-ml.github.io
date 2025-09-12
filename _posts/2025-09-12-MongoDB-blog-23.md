@@ -1,5 +1,7 @@
 ---
-title: MongoDB Aggregation Expressions: Using $lookup and $out
+
+title: MongoDB Aggregation Expressions Using $lookup and $out
+
 ---
 
 # Understanding MongoDB Aggregation Stages: $lookup and $out
