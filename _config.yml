@@ -1,6 +1,7 @@
 title: "Katakam Prashanth"
 description: ''
 theme: jekyll-theme-primer
+timezone: Asia/Kolkata
 
 # clean URLs like /my-post/
 permalink: /:title/
