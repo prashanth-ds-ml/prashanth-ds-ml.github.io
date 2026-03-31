@@ -131,20 +131,18 @@ layout: null
       </div>
     </section>
 
-    <!-- Blog (excerpts only) -->
+    <!-- Blog Call-to-Action -->
     <section id="blog">
       <h2>Blog</h2>
-      {% for post in site.posts limit:8 %}
-      <article class="card">
-        <h3 style="margin-top:0"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <div class="small">{{ post.date | date: "%b %d, %Y" }}</div>
-        <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-        <p class="small"><a href="{{ post.url | relative_url }}">Read more →</a></p>
-      </article>
-      {% endfor %}
-      <p class="small">
-        <a href="{{ '/archive/' | relative_url }}">View all posts</a>
-      </p>
+      <div class="blog-cta">
+        <h3>Explore My Technical Blog</h3>
+        <p>
+          Dive into technical articles, tutorials, and insights on MongoDB, SQL, Data Science, and Machine Learning
+        </p>
+        <a href="{{ '/blog.html' | relative_url }}" class="chip">
+          View All Blog Posts →
+        </a>
+      </div>
     </section>
 
     <!-- Contact -->

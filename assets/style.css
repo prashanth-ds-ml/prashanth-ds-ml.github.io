@@ -323,3 +323,39 @@ footer a:hover {
     border-top-color: var(--border);
   }
 }
+
+/* Blog Specific Styles */
+.blog-card {
+  margin-bottom: 32px;
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+}
+
+.read-time {
+  color: var(--muted);
+  font-size: 13px;
+  margin-left: 16px;
+}
+
+.blog-cta {
+  background: linear-gradient(135deg, var(--surface) 0%, var(--accent) 20%);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: var(--radius);
+}
+
+.blog-cta h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.blog-cta .chip {
+  background: white;
+  color: var(--accent);
+  font-size: 16px;
+  padding: 12px 24px;
+}
