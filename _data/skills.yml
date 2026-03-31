@@ -1,0 +1,40 @@
+# Skills data - can be used for dedicated skills section
+- name: "EDA (Exploratory Data Analysis)"
+  category: "Data Analysis"
+  level: "Expert"
+  
+- name: "SQL Analytics"
+  category: "Database"
+  level: "Expert"
+  
+- name: "Data Visualization"
+  category: "Data Analysis"
+  level: "Advanced"
+  
+- name: "Machine Learning"
+  category: "AI/ML"
+  level: "Intermediate"
+  
+- name: "RAG Systems"
+  category: "AI/ML"
+  level: "Intermediate"
+  
+- name: "Streamlit Deployment"
+  category: "Development"
+  level: "Advanced"
+  
+- name: "MongoDB"
+  category: "Database"
+  level: "Expert"
+  
+- name: "Python"
+  category: "Programming"
+  level: "Expert"
+  
+- name: "Pandas"
+  category: "Data Analysis"
+  level: "Expert"
+  
+- name: "NumPy"
+  recommendations: "Data Analysis"
+  level: "Expert"

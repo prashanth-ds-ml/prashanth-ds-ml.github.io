@@ -14,32 +14,11 @@ layout: null
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <div class="brand"><a href="#top">{{ site.title }}</a></div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#papers">Papers</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    {% include navigation.html %}
   </header>
 
   <main id="top">
-    <!-- Hero -->
-    <section id="about">
-      <h1>Katakam Prashanth</h1>
-      <p class="muted">{{ site.description }}</p>
-      <p>
-        Focus areas: EDA, SQL Analytics, Making dashboards, Getting hands on with different domians of data and perform relevant analytics with respect to that with a bit of ML models and try deploying those in streamlit and huggigng face spaces.
-      </p>
-      <p class="small">Find me on
-        <a href="https://github.com/prashanth-ds-ml">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/prashanth-katakam/">LinkedIn</a> ·
-        <a href="prashanth01071995@gmail.com">Email</a>
-      </p>
-    </section>
+    {% include about.html %}
 
     <!-- Projects -->
     <section id="projects">
@@ -171,9 +150,15 @@ layout: null
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Open to roles in ML/AI, RAG systems, and practical CV. For collaborations or consulting, email me at
-        <a href="mailto:you@email.com">you@email.com</a>.
+      {% assign contact = site.data.contact %}
+      <p>{{ contact.availability }}. For collaborations or consulting, email me at
+        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>.
       </p>
+      <div class="chips">
+        {% for social in contact.social %}
+          <a href="{{ social.url }}" class="chip" target="_blank" rel="noopener">{{ social.name }}</a>
+        {% endfor %}
+      </div>
     </section>
   </main>
 

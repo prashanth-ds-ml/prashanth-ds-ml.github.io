@@ -1,0 +1,20 @@
+# Contact information
+email: "prashanth01071995@gmail.com"
+linkedin: "https://www.linkedin.com/in/prashanth-katakam/"
+github: "https://github.com/prashanth-ds-ml"
+location: "India"
+availability: "Open to roles in ML/AI, RAG systems, and practical CV"
+
+# Social links (optional)
+social:
+  - name: "GitHub"
+    url: "https://github.com/prashanth-ds-ml"
+    icon: "github"
+    
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/prashanth-katakam/"
+    icon: "linkedin"
+    
+  - name: "Email"
+    url: "mailto:prashanth01071995@gmail.com"
+    icon: "envelope"
