@@ -13,11 +13,9 @@ layout: null
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    {% include navigation.html %}
-  </header>
+  {% include navigation.html %}
 
-  <main id="top">
+  <main>
     {% include about.html %}
 
     <!-- Projects -->
@@ -134,12 +132,12 @@ layout: null
     <!-- Blog Call-to-Action -->
     <section id="blog">
       <h2>Blog</h2>
-      <div class="blog-cta">
-        <h3>Explore My Technical Blog</h3>
+      <div class="card" style="text-align: center;">
+        <h3 style="margin-top: 0;">Explore My Technical Blog</h3>
         <p>
           Dive into technical articles, tutorials, and insights on MongoDB, SQL, Data Science, and Machine Learning
         </p>
-        <a href="{{ '/blog.html' | relative_url }}" class="chip">
+        <a href="{{ '/blog.html' | relative_url }}" style="padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: var(--radius); display: inline-block; margin-top: 1rem;">
           View All Blog Posts →
         </a>
       </div>
@@ -161,9 +159,7 @@ layout: null
   </main>
 
   <footer>
-    <p>© {{ "now" | date: "%Y" }} {{ site.title }} · Data Scientist & ML Engineer</p>
-    <p>Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
-    <p>Designed for clarity · Developed for impact</p>
+    <p>© {{ "now" | date: "%Y" }} {{ site.title }}</p>
   </footer>
 </body>
 </html>
